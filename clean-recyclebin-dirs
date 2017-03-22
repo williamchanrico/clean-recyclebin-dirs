@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+# Title: $RECYCLE.BIN Cleaner
+# Description: This script will check and delete every $RECYCLE.BIN folder in $dirs array
+# Author: William Chanrico
+# Date: 21-Oct-2016
+
+echo " _____________________ 	"
+echo "/ hello, who's there? \\	"
+echo "\\ william said hi...  /	"
+echo " ---------------------	"
+echo "       \\   ,__,			"
+echo "        \\  (..)____		"
+echo "           (__)    )\		"
+echo "              ||--|| *	"
+
+dirs[0]=~/Desktop
+dirs[1]=~/Documents
+dirs[2]=~/Downloads
+dirs[3]=~/Pictures
+dirs[4]=~/Collections
+
+for a in ${dirs[@]}; do
+	dir=$a/\$RECYCLE.BIN
+	if [ -d $dir ]; then
+		echo "Deleting $dir"
+		rm -rf $dir
+	fi
+done
+
+echo -e 'Delete complete\n'
