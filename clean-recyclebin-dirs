@@ -14,11 +14,11 @@ echo "        \\  (..)____		"
 echo "           (__)    )\		"
 echo "              ||--|| *	"
 
-dirs[0]=~/Desktop
-dirs[1]=~/Documents
-dirs[2]=~/Downloads
-dirs[3]=~/Pictures
-dirs[4]=~/Collections
+dirs[0]=~/desktop
+dirs[1]=~/documents
+dirs[2]=~/downloads
+dirs[3]=~/pictures
+dirs[4]=~/collections
 
 for a in ${dirs[@]}; do
 	dir=$a/\$RECYCLE.BIN
